@@ -12,13 +12,33 @@ body {
   font-size: 12px;
 }
 
+.h-nav {
+  background-color: white;
+  height: 100px;
+  padding: 0px 5px;
+}
+
+.h-nav ul {
+  list-style: none;
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hamb li {
+  display: none;
+}
+
 .b-border {
   border-right: 1px solid white;
 }
 
 .nav-arrow {
   height: 50px;
-  background-color: black;
   width: 100px;
   position: relative;
   left: 275px;
@@ -28,24 +48,19 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   top: -341px;
+  background-color: black;
 }
 
-.arrow-next {
-  width: 50px;
+.arrow-l {
+  padding-left: 15px;
 }
 
-.arrow-next img {
-  max-width: 100%;
-}
-
-.arrow-prev {
-  width: 50px;
-}
-
-.arrow-prev img {
-  max-width: 100%;
+.arrow-r {
+  padding-right: 15px;
 }
 
 .hide {
@@ -77,7 +92,7 @@ body {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: top-left;
-  background-image: url(/room-homepage-master/images/mobile-image-hero-1.jpg);
+  background-image: url(/images/mobile-image-hero-1.jpg);
   background-position: center/center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -101,15 +116,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url(/room-homepage-master/images/icon-hamburger.svg);
+  background-image: url(/images/icon-hamburger.svg);
   height: 25px;
   width: 25px;
   margin-left: 20px;
   background-repeat: no-repeat;
-}
-
-.top-left .nav li {
-  display: none;
 }
 
 .top-right {
@@ -122,7 +133,7 @@ body {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: img-bottom-left;
-  background-image: url(/room-homepage-master/images/image-about-dark.jpg);
+  background-image: url(/images/image-about-dark.jpg);
   background-repeat: no-repeat;
   height: 360px;
 }
@@ -138,7 +149,7 @@ body {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: img-bottom-right;
-  background-image: url(/room-homepage-master/images/image-about-light.jpg);
+  background-image: url(/images/image-about-light.jpg);
   background-repeat: no-repeat;
   height: 360px;
 }
@@ -147,20 +158,5 @@ body {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: bottom-center;
-}
-
-.nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none;
-}
-
-.nav .logo {
-  padding-right: 10px;
-}
-
-.nav li {
-  padding-right: 5px;
 }
 /*# sourceMappingURL=styles.css.map */

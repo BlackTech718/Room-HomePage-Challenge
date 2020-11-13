@@ -16,28 +16,43 @@ body{
     font-family: 'Spartan',sans-serif;
     font-size: 12px;
 }
-// Utilities 
+// Utilities
+
+.h-nav{
+    background-color:$White;
+    height:100px;
+    padding:0px 5px;
+    ul{
+        list-style: none;
+        padding-top:50px;
+        display:flex;
+        justify-content:space-between;
+    }
+} 
+.hamb{
+    li{display:none;}
+}
 .b-border{
     border-right: 1px solid $White;
 }
 .nav-arrow{
     height:50px;
-    background-color: black;
     width:100px;
     position: relative;
     left:275px;
     display:flex;
     align-items: center;
-    padding-left: 20px;
+    justify-content: space-between;
     top:-341px;
+    background-color: black;
 }
-.arrow-next{
-   width:50px;
-   img{max-width: 100%;}
+
+.arrow-l{
+    padding-left:15px;
 }
-.arrow-prev{
-    width:50px;
-    img{max-width: 100%;}
+
+.arrow-r{
+    padding-right:15px;
 }
 .hide{
     display:none;
@@ -65,7 +80,7 @@ body{
 }
 .top-left{
     grid-area:top-left;
-    background-image: url(/room-homepage-master/images/mobile-image-hero-1.jpg);
+    background-image: url(/images/mobile-image-hero-1.jpg);
     background-position:center/center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -81,14 +96,11 @@ body{
         top:30px;
         display:flex;
         flex-direction:column;
-        background-image: url(/room-homepage-master/images/icon-hamburger.svg);;
+        background-image: url(/images/icon-hamburger.svg);
         height:25px;
         width:25px;
         margin-left:20px;
         background-repeat: no-repeat;
-        li{
-            display:none;
-        }
     }
 }
 .top-right{
@@ -96,7 +108,7 @@ body{
 }
 .img-bottom-left{
     grid-area:img-bottom-left;
-    background-image: url(/room-homepage-master/images/image-about-dark.jpg);
+    background-image: url(/images/image-about-dark.jpg);
     background-repeat: no-repeat;
     height:360px;
 }
@@ -112,25 +124,13 @@ body{
 // }
 .img-bottom-right{
     grid-area:img-bottom-right;
-    background-image: url(/room-homepage-master/images/image-about-light.jpg);
+    background-image: url(/images/image-about-light.jpg);
     background-repeat: no-repeat;
     height:360px;
 }
 .bottom-center{
     grid-area:bottom-center;
 }
-
-.nav{
-    .logo{
-        padding-right:10px;
-    }
-    display:flex;
-    list-style: none;
-    li{
-        padding-right:5px;
-    }
-}
-
 
 
 

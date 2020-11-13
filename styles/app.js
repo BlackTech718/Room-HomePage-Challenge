@@ -33,8 +33,8 @@ var parent = document.getElementsByClassName("top-right")[0].children[0]
 var parent1 = document.getElementsByClassName("top-right")[0].children[1]
 var parent2 = document.getElementsByClassName("top-right")[0].children[2]
 var elder = [parent, parent1, parent2]
+var i 
 navl.addEventListener("click",function(){
-    var  i 
     for(i = 0; i < elder.length;i++){
         console.log(i)
         if(elder[i].classList.contains("hide")){

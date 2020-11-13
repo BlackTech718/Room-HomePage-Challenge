@@ -18,8 +18,17 @@
 <body>
   <div id="grid">
     <div class="top-left">
+      <div class="h-nav hide">
+        <ul>
+          <li>X</li>
+          <li>home</li>
+          <li>Shop</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
       <p class="logo">room</p>
-      <ul class="nav">
+      <ul class="nav hamb">
         <li><a href="#">home</a></li>
         <li><a href="#">shop</a></li>
         <li><a href="#">about</a></li>
@@ -42,32 +51,32 @@
         </div>
       </div>
       <div class="slide-1 hide">
-        We are available all across the globe
-      
-        With stores all over the world, it's easy for you to find furniture for your home or place of business. 
-        Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
-        store locator. Any questions? Don't hesitate to contact us today.
-      
-        Shop now
+        <div class="content-box">
+          We are available all across the globe
+        
+          With stores all over the world, it's easy for you to find furniture for your home or place of business. 
+          Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
+          store locator. Any questions? Don't hesitate to contact us today.
+        
+          Shop now
+        </div>
       </div>
       <div class="slide-2 hide">
-        Manufactured with the best materials
-      
-        Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
-        to ensure that every product is made as perfect and as consistent as possible. With three decades of 
-        experience in this industry, we understand what customers want for their home and office.
-      
-        Shop now
-      </div>
-      <div class="nav-arrow" onclick="showlist()">
-        <div class="arrow-next">
-          <img src="/room-homepage-master/images/icon-angle-left.svg" alt="">
-        </div>
-        <div class="arrow-prev">
-          <img src="/room-homepage-master/images/icon-angle-right.svg" alt="">
+        <div class="content-box">
+          Manufactured with the best materials
+        
+          Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
+          to ensure that every product is made as perfect and as consistent as possible. With three decades of 
+          experience in this industry, we understand what customers want for their home and office.
+        
+          Shop now
         </div>
       </div>
     </div>
+        <div class="nav-arrow">
+          <img class="arrow-l" src="/images/icon-angle-left.svg" alt="">
+          <img class="arrow-r" src="/images/icon-angle-right.svg" alt="">
+        </div>
     <div class="img-bottom-left"></div>
     <div class="bottom-center">
       <div class="content-box">
@@ -91,6 +100,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
-  <script src="/room-homepage-master/styles/app.js"></script>
+  <script src="/styles/app.js"></script>
 </body>
 </html>
