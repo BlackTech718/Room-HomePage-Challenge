@@ -41,7 +41,7 @@ body {
   height: 50px;
   width: 100px;
   position: relative;
-  left: 275px;
+  right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,7 +51,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  top: -341px;
+  top: 0px;
   background-color: black;
 }
 
